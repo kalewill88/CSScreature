@@ -1,0 +1,113 @@
+body{
+    background-image: url(underwater.jpg);
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-family: "Lucida Handwriting", cursive;
+    font-size: 45px;
+    color:rgb(53, 25, 179);
+    text-align: center;
+    background-color: white;
+    padding: 2em;
+}
+
+.phish_body {
+    height: 70px;
+    width: 150px;
+    background-color: rgb(233, 152, 31);
+    border-radius: 50%;
+    animation-name: phish_body_movement;
+    animation-duration: 4s;
+}
+
+@keyframes phish_body_movement {
+    0%   {background-color:rgb(233, 152, 31); left:70%; top:60%;}
+    25%  {background-color:yellow; left:25%; top:30%;}
+    50%  {background-color:blue; left:10%; top:70%;}
+    75%  {background-color:green; left:0%; top:100%;}
+    100% {background-color:rgb(233, 152, 31); left:80%; top:50%;}
+}
+
+.phish-fin {
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+	border-right: 55px solid coral;
+	border-bottom: 20px solid transparent;
+    border-radius: 10px;
+}
+
+.tail {
+    width: 0;
+    height: 0;
+    background-image: linear-gradient(to right, red ,yellow);
+    border-top: 30px solid transparent;
+    border-right: 55px solid rgb(233, 152, 31);
+    border-bottom: 30px solid transparent;
+    border-radius: 10px;
+}
+
+.righteye {
+    width: 6px;
+    height: 6px;
+    border: solid 1px black;
+    border-radius: 4px;
+    z-index: 1;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    background-color: black;
+}
+
+.lefteye {
+    width: 6px;
+    height: 6px;
+    border: solid 1px black;
+    border-radius: 4px;
+    z-index: 1;
+    position: relative;
+    left: 20px;
+    top: 1px;
+    background-color: black;
+}
+
+.mouth {
+    width: 15px;
+    height: 8px;
+    border: solid 1px black;
+    border-radius: 1px 1px 40px 40px;
+    margin: 16px;
+    position: relative;
+    top: 7px;
+    left: -15px;
+    background-color: black;
+}
+
+#inner-left {
+    width: 2px;
+    height: 2px;
+    border: solid 1px white;
+    border-radius: 3px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+    background-color: white;
+}
+
+#inner-right {
+    width: 2px;
+    height: 2px;
+    border: solid 1px white;
+    border-radius: 3px;
+    position: relative;
+    left: 2px;
+    top: 2px;
+    background-color: white;
+}
+
+
+
